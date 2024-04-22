@@ -1,0 +1,83 @@
+@keyframes text-color-transition {
+    from {
+      color: black; 
+    }
+    to {
+      color: white; 
+    }
+  }
+  .header>h1 {
+    animation: text-color-transition 5s ease-in-out; 
+    text-align: center;
+  }
+.repoList{
+    max-width:800px ;
+    margin:50px auto;
+    border: 5px solid white;
+    border-radius: 20px;
+}
+.repoList>h2{
+    text-align: center;
+    font-size: 30px;
+}
+.search-repo {
+    width: 689px ;
+    margin-inline: 46px;
+    margin-block: 10px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  .search-repo::placeholder {
+    color: #999;
+  }
+  .search-repo:focus {
+    outline: none;
+    border-color: #007bff;
+  }  
+ul{
+    list-style: none;
+}
+.infoBTN{
+    display: block;
+    background-color: #24b44f;
+    width: 100px;
+    border: 1px solid;
+    margin: 20px auto;
+}
+.infoBTN:hover{
+    background-color: #06ff51 ;
+    color: #f4f4f4;
+}
+.link{
+    color: white;
+}
+.link:hover{
+    color: #f4f4f4;
+}
+li{
+    border: 2px solid;
+    border-radius: 10px;
+    margin-block: 30px;
+    margin-right: 44px ;
+}
+span{
+    display: block;
+    width: max-content;
+    margin: 20px auto;
+    font-size: 25px;
+    font-weight: 500;
+}
+.navBar{
+    display: flex;
+    width: fit-content;
+    margin: 20px auto;
+}
+.navBar>button{
+    margin-inline: 5px;
+}
+.active{
+    background-color: white;
+    color: black;
+}
