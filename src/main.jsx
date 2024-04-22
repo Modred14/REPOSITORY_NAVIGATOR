@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <QueryClientProvider client={queryClient}>
+      <QueryClientProvider client={QueryClient}>
         <ChakraProvider>
           <App />
         </ChakraProvider>
