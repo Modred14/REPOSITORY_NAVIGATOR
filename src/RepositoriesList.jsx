@@ -2,21 +2,22 @@ import { useQuery } from 'react-query';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useState } from 'react';
-import Paginate from './pagination';
-import './repoList.css'
+import Paginate from './Pagination';
+import './RepositoriesList.css'
 
-const token = import.meta.env.VITE_ACCESS_TOKEN || process.env.VITE_ACCESS_TOKEN;
+const token = import.meta.env.VITE_ACCESS_TOKEN;
 console.log(token);
 
 const fetchRepositories = async () => {
   try {
-    const data = await axios.get(api); 
-    const response = await axios.get('https://api.github.com/users/Modred14', {
+    const response = await axios.get('https://api.github.com/users/Modred14/repos', {
       headers: {
         Authorization: `Bearer ${token}`
       }
     });
-    return response.data; 
+    console.log(response.data) 
+    return response.data;
+
   } catch (error) {
     console.error('Failed to fetch repositories:', error);
     throw new Error('Failed to fetch repositories');
@@ -44,14 +45,14 @@ function RepositoriesList () {
   return (
     <div className="header">
       <h1>MY PORTFOLIO</h1>
-      <section className='repoList'>
+      <section className='RepositoriesList'>
         <h2>My Repositories</h2>
         <input
             type="text"
             placeholder="Search repositories..."
             className="search-repo"
             value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
+            onChange={(e) => setSearchQuery(e.target.value)} v 
           />
         <ul>
           {currentItems.map((repo, index) => (

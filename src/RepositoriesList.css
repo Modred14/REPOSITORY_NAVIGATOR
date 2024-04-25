@@ -10,13 +10,13 @@
     animation: text-color-transition 5s ease-in-out; 
     text-align: center;
   }
-.repoList{
+.RepositoriesList{
     max-width:800px ;
     margin:50px auto;
     border: 5px solid white;
     border-radius: 20px;
 }
-.repoList>h2{
+.RepositoriesList>h2{
     text-align: center;
     font-size: 30px;
 }
@@ -65,7 +65,7 @@ li{
 span{
     display: block;
     width: max-content;
-    margin: 20px auto;
+    margin: 20px auto; 
     font-size: 25px;
     font-weight: 500;
 }
