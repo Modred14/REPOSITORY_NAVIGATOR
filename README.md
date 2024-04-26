@@ -1,4 +1,4 @@
-# My Repository Navigator
+# Repository Navigator
 
 This Repository Navigator showcases a user's GitHub repositories with features such as pagination, search, and filtering. It also includes detailed views for individual repositories, an error boundary example, a 404 page, and advanced CRUD operations on repositories.
 
@@ -30,9 +30,14 @@ This Repository Navigator showcases a user's GitHub repositories with features s
 - You can use the search field to narrow down repositories by their names.
 - By selecting a repository name, you can access more detailed information about it.
 
-## Contributing
+## Contribution
 
 Contributions are welcome! If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request.
+
+## License
+
+This project was developed by **Favour Omirin** as part of the Second Semester exam at **AltSchool Africa School of Engineering**.
+
 
 ## License
 

@@ -1,13 +1,8 @@
-@keyframes text-color-transition {
-    from {
-      color: black; 
-    }
-    to {
-      color: white; 
-    }
-  }
+body, .header{
+  background-color: #2C3E50;
+}
+ 
   .header>h1 {
-    animation: text-color-transition 5s ease-in-out; 
     text-align: center;
   }
 .RepositoriesList{
@@ -36,18 +31,26 @@
     outline: none;
     border-color: #007bff;
   }  
+.grid-box{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 3rem;
+  padding: 1rem;
+  color: white;
+}
+  
 ul{
     list-style: none;
 }
 .infoBTN{
     display: block;
-    background-color: #24b44f;
+    background-color: #2600ff ;
     width: 100px;
     border: 1px solid;
     margin: 20px auto;
 }
 .infoBTN:hover{
-    background-color: #06ff51 ;
+    background-color: #170099 ;
     color: #f4f4f4;
 }
 .link{
@@ -62,6 +65,35 @@ li{
     margin-block: 30px;
     margin-right: 44px ;
 }
+.followers-following {
+  display: flex;
+}
+
+.followers-following p {
+  margin-right: 20px; 
+}
+
+.GitHubProfile {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.avatar-container img {
+  width: 300px;  
+  height: 300px; 
+  border-radius: 50%;  
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+
+.user-details {
+  flex-grow: 1;
+}
+
+
 span{
     display: block;
     width: max-content;
@@ -69,15 +101,33 @@ span{
     font-size: 25px;
     font-weight: 500;
 }
-.navBar{
+.header {
+  display: grid;
+  grid-template-columns: 500px auto;
+  gap: 1rem;
+  padding: 1rem;
+  color: white;
+}
+li{
+  background-color: #f4f4f4;
+  color: #2C3E50;
+}
+li:hover {
+  background-color: #727272;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  body{
+    background-color: #2C3E50;
+  }
+  .header {
     display: flex;
-    width: fit-content;
-    margin: 20px auto;
-}
-.navBar>button{
-    margin-inline: 5px;
-}
-.active{
-    background-color: white;
-    color: black;
+    flex-direction: column; 
+    grid: none;
+    background-color: #2C3E50;
+  }
+  .search-repo {
+    width: 83%;
+  }
 }
