@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserFriends } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '@chakra-ui/react';
-
+import image from './assets/image.jpg'
 
 
 const token = import.meta.env.VITE_GITHUB_TOKEN || process.env.VITE_GITHUB_TOKEN;
@@ -105,7 +105,7 @@ function RepositoriesList () {
       <section className='GitHubProfile'> 
       <div>
           <div className="avatar-container">
-            <img src={`./src/assets/image.jpg`}/>
+            <img src={image}/>
           </div>
         {userProfile && (
          

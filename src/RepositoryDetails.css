@@ -48,8 +48,9 @@ body{
 .button-up,.createRepo, .button-up1{
     background-color: rgb(0, 194, 0);
 }
-.button-up:hover,.createRepo:hover .button-up1:hover{
-    background-color: rgb(0, 133, 0);
+.button-up:hover,.createRepo:hover, .button-up1:hover{
+    background-color: rgba(0, 133, 0);
+    color: aliceblue;
 }
 
 .go-home-link {
