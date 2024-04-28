@@ -3,7 +3,7 @@ import { Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody,
 import { Select } from '@chakra-ui/react';
 import './create.css'
 
-const token = import.meta.env.VITE_GITHUB_TOKEN || process.env.VITE_GITHUB_TOKEN;
+const token = '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' || import.meta.env.VITE_GITHUB_TOKEN || process.env.VITE_GITHUB_TOKEN;
 function CreateRepo({ isOpen, onClose }) {
     const [repoDetails, setRepoDetails] = useState({
         name: '',

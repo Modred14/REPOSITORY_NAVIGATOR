@@ -8,8 +8,7 @@ import { useNavigate } from "react-router-dom";
 import UpdateRepoModal from "./UpdateRepoModal";
 import ErrorBoundary from "./ErrorBoundary";
 
-const token =
-  import.meta.env.VITE_GITHUB_TOKEN || process.env.VITE_GITHUB_TOKEN;
+const token = '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' || import.meta.env.VITE_GITHUB_TOKEN || process.env.VITE_GITHUB_TOKEN;
 function RepositoryDetails() {
   const { id } = useParams();
   const [repository, setRepository] = useState("");
