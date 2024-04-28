@@ -1,0 +1,46 @@
+.Wentwrong {
+  max-width: 600px;
+  text-align: justify;
+  margin: 90px auto;
+  padding: 20px;
+  background-color: hsl(0, 0%, 96%);
+  border-radius: 8px;
+  color: rgb(26, 25, 25);
+  font-size: larger;
+  font-weight: 700;
+}
+.Wentwrong details[open] {
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  max-width: fit-content;
+}
+
+.Wentwrong details:not([open]) {
+  background-color: #e9ecef;
+  height: 150px;
+}
+
+.Wentwrong button.Reload {
+  background-color: rgb(23, 85, 255);
+  color: white;
+  margin-left: 70%;
+  margin-top: 20px;
+}
+.Wentwrong button.Reload:hover {
+  background-color: rgb(20, 75, 226);
+  color: white;
+  margin-left: 70%;
+  margin-top: 20px;
+}
+.error {
+  background-color: rgb(23, 85, 255);
+  color: white;
+  margin-right: 10px;
+}
+.error:hover {
+  background-color: rgb(13, 57, 175);
+  color: white;
+  margin-right: 10px;
+}

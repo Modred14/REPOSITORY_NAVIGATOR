@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import "./Error.css";
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
@@ -11,25 +12,40 @@ class ErrorBoundary extends React.Component {
   }
 
   componentDidCatch(error, errorInfo) {
-    this.setState({ error: error, errorInfo: errorInfo });
+    this.setState({
+      error: error,
+      errorInfo: errorInfo,
+    });
     console.error("Uncaught error:", error, errorInfo);
   }
 
   render() {
     if (this.state.hasError) {
       return (
-        <div>
-          <h1>Something went wrong.</h1>
-          <details style={{ whiteSpace: 'pre-wrap' }}>
+        <div className="Wentwrong">
+          <h2>⚠️Something went wrong⚠️</h2>
+          <p>
+            Sorry, something went wrong. Please click the 'Reload' button to
+            reload or click on 'Details' to see the error details. If the
+            problem persists, check your internet connection or contact support
+            for assistance.
+          </p>
+          <details style={{ whiteSpace: "pre-wrap" }}>
             {this.state.error && this.state.error.toString()}
             <br />
-            {this.state.errorInfo.componentStack}
+
+            {this.state.errorInfo
+              ? this.state.errorInfo.componentStack
+              : "No stack trace available"}
           </details>
+          <button className="Reload" onClick={() => window.location.reload()}>
+            Reload
+          </button>
         </div>
       );
     }
 
-    return this.props.children; 
+    return this.props.children;
   }
 }
 

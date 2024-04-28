@@ -1,84 +1,103 @@
-body{
-    background-color: #2C3E50;
+body {
+  background-color: #2c3e50;
 }
-.details-container, .details-contain, .details-contain1{
-    max-width: 600px;
-    margin: 70px auto;
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-radius: 8px;
-    color: rgb(26, 25, 25);
+.details-container,
+.details-contain,
+.details-contain1 {
+  max-width: 600px;
+  margin: 70px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  color: rgb(26, 25, 25);
 }
-.details-contain, .details-contain2{
-    display: flex;
-    flex-direction: column; 
-    grid: none;
-    
+.details-contain,
+.details-contain2 {
+  display: flex;
+  flex-direction: column;
+  grid: none;
 }
 
 .repository-name {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
-  
-.repository-description {
-    margin-bottom: 20px;
-    font-size: 20px ;
-    font-weight:bold;
-}
-  
-.repository-details p {
-    margin-bottom: 8px;
-}
-.Input{
-    margin-bottom: 30px;
-    height: 50px;
-    font-size: 20px;
-}
-.button-del{
-    background-color: red;
-    margin-left: 20%;
-    margin-right: 20px;
 
-} 
-.button-del:hover{
-    background-color: rgb(187, 0, 0);
+.repository-description {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
 }
-.button-up,.createRepo, .button-up1{
-    background-color: rgb(0, 194, 0);
+
+.repository-details p {
+  margin-bottom: 8px;
 }
-.button-up:hover,.createRepo:hover, .button-up1:hover{
-    background-color: rgba(0, 133, 0);
-    color: aliceblue;
+.Input {
+  margin-bottom: 30px;
+  height: 50px;
+  font-size: 20px;
+  width: 99%;
+}
+.button-del {
+  background-color: red;
+  margin-left: 20%;
+  margin-right: 20px;
+}
+.button-del:hover {
+  background-color: rgb(187, 0, 0);
+}
+.button-up,
+.createRepo,
+.button-up1 {
+  background-color: rgb(0, 194, 0);
+}
+.button-up:hover,
+.createRepo:hover,
+.button-up1:hover {
+  background-color: rgba(0, 133, 0);
+  color: aliceblue;
 }
 
 .go-home-link {
-    width: fit-content;
-    display: block;
-    margin: 10px auto;
-    padding: 5px 10px;
-    text-decoration: none;
-    border-radius: 10px;
-    background-color: #2600ff ;
-    font-size: 16px;
-    color: #f4f4f4;
+  width: fit-content;
+  display: block;
+  margin: 10px auto;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: #2600ff;
+  font-size: 16px;
+  color: #f4f4f4;
 }
-  
-.go-home-link:hover {
-    background-color: #170099 ;
-    color: #f4f4f4;
+.go-home-link1 {
+  width: fit-content;
+  display: block;
+  margin: 10px auto;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: #2600ff;
+  font-size: 16px;
+  color: #f4f4f4;
+  margin-top: -50px;
 }
-.button-up1{
-    align-items: right;
-    margin-left: 70%;
+
+.go-home-link:hover,
+.go-home-link1:hover {
+  background-color: #170099;
+  color: #f4f4f4;
+}
+.button-up1 {
+  align-items: right;
+  margin-left: 70%;
 }
 @media screen and (max-width: 768px) {
-    .button-del{
-        margin-left: 0%;
-    }
-    .button-up1{
-        align-items: right;
-        margin-left: 59%;
-    }
+  .button-del {
+    margin-left: 0%;
+  }
+  .button-up1 {
+    align-items: right;
+    margin-left: 59%;
+  }
 }
