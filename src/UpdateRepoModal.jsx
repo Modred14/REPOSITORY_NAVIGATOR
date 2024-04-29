@@ -19,7 +19,7 @@ import {
 
 const UpdateRepoModal = ({ repo, onUpdate }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [name, setName] = useState(repo.name || "");
+  const [name, setName] = useState("" || repo.name);
   const [description, setDescription] = useState(repo.description || "");
 
   const handleSubmit = () => {

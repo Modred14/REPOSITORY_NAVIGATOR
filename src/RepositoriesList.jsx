@@ -13,7 +13,7 @@ import ErrorBoundary from "./ErrorBoundary";
 import ErrorThrower from "./Errorthrower";
 import CreateRepo from "./CreateRepo";
 
-const token = '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' || import.meta.env.VITE_GITHUB_TOKEN || process.env.VITE_GITHUB_TOKEN;
+const token = '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' || import.meta.env.VITE_GITHUB_TOKEN || process.env.VITE_GITHUB_TOKEN;
 
 const fetchUserProfile = async () => {
   try {

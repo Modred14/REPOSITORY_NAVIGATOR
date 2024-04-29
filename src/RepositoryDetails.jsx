@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 import UpdateRepoModal from "./UpdateRepoModal";
 import ErrorBoundary from "./ErrorBoundary";
 
-const token = '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' || import.meta.env.VITE_GITHUB_TOKEN || process.env.VITE_GITHUB_TOKEN;
+const token = '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' || import.meta.env.VITE_GITHUB_TOKEN || process.env.VITE_GITHUB_TOKEN;
 function RepositoryDetails() {
   const { id } = useParams();
   const [repository, setRepository] = useState("");
@@ -44,7 +44,7 @@ function RepositoryDetails() {
           const response = await axios.delete(`https://api.github.com/repos/Modred14/${repoId}`, {
             headers: { 'Authorization': `Bearer ${token}` } 
           });
-          if (response.status === 204) {
+          if (response.status === true) {
             localStorage.removeItem(`repo-${repoId}`);
             alert("Repository deleted successfully.");
           }
@@ -53,7 +53,7 @@ function RepositoryDetails() {
           alert("Failed to delete repository. Please try again.");
         }
       } else {
-        alert("You can only delete repositories created through this app.");
+        alert("You are not authorized to delete this repo");
       }
     }
   };
