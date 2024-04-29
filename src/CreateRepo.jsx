@@ -18,7 +18,7 @@ import { Select } from "@chakra-ui/react";
 import "./create.css";
 
 const token =
-  "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" ||
+  "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" ||
   import.meta.env.VITE_GITHUB_TOKEN ||
   process.env.VITE_GITHUB_TOKEN;
 function CreateRepo({ isOpen, onClose }) {
@@ -57,7 +57,7 @@ function CreateRepo({ isOpen, onClose }) {
     const response = await fetch("https://api.github.com/user/repos", {
       method: "POST",
       headers: {
-        Authorization: `Bearer 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`,
+        Authorization: `Bearer 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`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify(data),
