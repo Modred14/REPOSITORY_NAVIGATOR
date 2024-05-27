@@ -100,4 +100,12 @@ body {
     align-items: right;
     margin-left: 59%;
   }
+  
 }
+
+@media screen and (max-width: 500px) {
+  .span-name{
+    max-width: 200px;
+  }
+  }
+

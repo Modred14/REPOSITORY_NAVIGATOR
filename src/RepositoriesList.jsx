@@ -213,7 +213,7 @@ function RepositoriesList() {
             <ul>
               {currentItems.map((repo, index) => (
                 <li key={index}>
-                  <span>{repo.name.toUpperCase()}</span>
+                  <span className="span-name">{repo.name.toUpperCase()}</span>
                   <button className="infoBTN">
                     <Link className="link" to={`/repository/${repo.id}`}>
                       DETAILS
