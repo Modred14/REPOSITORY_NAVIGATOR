@@ -81,7 +81,7 @@ function RepositoryDetails() {
   if (isLoading) {
     return (
       <Box className="details-container" textAlign="center">
-        <Spinner size="xl" />
+        <Spinner width="50px" height="50px"/>
         <Text>Loading repository details...</Text>
       </Box>
     );

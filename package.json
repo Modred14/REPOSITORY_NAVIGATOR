@@ -36,6 +36,7 @@
     "framer-motion": "^11.1.7",
     "md5": "^2.3.0",
     "react-dom": "^18.2.0",
+    "react-loading-skeleton": "^3.4.0",
     "react-query": "^3.39.3",
     "react-router-dom": "^6.23.0"
   }

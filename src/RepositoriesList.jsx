@@ -12,6 +12,8 @@ import image from "./assets/image.jpg";
 import ErrorBoundary from "./ErrorBoundary";
 import ErrorThrower from "./Errorthrower";
 import CreateRepo from "./CreateRepo";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 
 const token = import.meta.env.VITE_GITHUB_TOKEN || process.env.VITE_GITHUB_TOKEN;
 
@@ -64,7 +66,7 @@ function RepositoriesList() {
   const [currentPage, setCurrentPage] = useState(1);
   const [perPage, setPerPage] = useState(2);
   const [searchQuery, setSearchQuery] = useState("");
-  const [userProfile, setUserProfile] = useState(true);
+  const [userProfile, setUserProfile] = useState(null);
   const [repositoryCount, setRepositoryCount] = useState(0);
   const navigate = useNavigate();
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -94,7 +96,60 @@ function RepositoriesList() {
   const lastIndex = currentPage * perPage;
   const firstIndex = lastIndex - perPage;
 
-  if (isLoading) return <div>Loading...</div>;
+  if (isLoading) {
+    return (
+      <div className="header">
+        <section className="GitHubProfile">
+          <div>
+            <div className="avatar-container">
+              <Skeleton circle height={300} width={300} />
+            </div>
+            <div className="user-details">
+            <Skeleton width={500} height={300} />
+              <h1>
+                <Skeleton width={200} />
+              </h1>
+              <p>
+                <Skeleton count={4} />
+              </p>
+              <div className="followers-following">
+                <p>
+                  <FontAwesomeIcon icon={faUserFriends} /> Followers:{" "}
+                  <Skeleton width={50} />
+                </p>
+                <p>
+                  <FontAwesomeIcon icon={faUserFriends} /> Following:{" "}
+                  <Skeleton width={50} />
+                </p>
+                <p>
+                  🗂️ Total Repositories: <Skeleton width={50} />
+                </p>
+              </div>
+              <p>
+                GitHub Profile: <Skeleton width={200} />
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h1 className="header-desktop">MY PORTFOLIO</h1>
+          <section className="RepositoriesList">
+            <h2>My Repositories</h2>
+            <Skeleton max-width={600} height={40} />
+            <ul>
+              {[...Array(2)].map((_, index) => (
+                <li key={index}>
+                  <Skeleton max-width={600} height={30} />
+                </li>
+              ))}
+            </ul>
+          </section>
+        </section>
+      </div>
+    );
+  }
+
   if (isError) return <div>Error fetching repositories</div>;
 
   const filteredRepositories = data.filter((repo) =>
@@ -111,7 +166,7 @@ function RepositoriesList() {
         <section className="GitHubProfile">
           <div>
             <div className="avatar-container">
-              <img src={image} />
+              <img src={image} alt="User avatar" />
             </div>
             {userProfile && (
               <div className="user-details">
