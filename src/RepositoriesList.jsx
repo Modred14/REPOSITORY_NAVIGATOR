@@ -137,6 +137,13 @@ function RepositoriesList() {
           <section className="RepositoriesList">
             <h2>My Repositories</h2>
             <Skeleton max-width={600} height={40} />
+            <input
+              type="text"
+              placeholder="Search repositories..."
+              className="search-repo"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
             <ul>
               {[...Array(2)].map((_, index) => (
                 <li key={index}>

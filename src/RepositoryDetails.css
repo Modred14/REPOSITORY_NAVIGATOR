@@ -103,9 +103,14 @@ body {
   
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) and (min-width: 400px) {
+  .span-name{
+    max-width: 250px;
+    word-break: break-all;  }
+  }
+@media screen and (max-width: 400px) {
   .span-name{
     max-width: 200px;
-  }
+    word-break: break-all;  }
   }
 
