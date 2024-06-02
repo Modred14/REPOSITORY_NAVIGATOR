@@ -33,7 +33,7 @@ const UpdateRepoModal = ({ repo, onUpdate }) => {
   return (
     <>
       <Button className="button-up" onClick={onOpen}>
-        Update Repository
+        Update Repo
       </Button>
 
       <Modal isOpen={isOpen} onClose={onClose}>

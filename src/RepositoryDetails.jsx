@@ -80,7 +80,7 @@ function RepositoryDetails() {
 
   if (isLoading) {
     return (
-      <Box className="details-container" textAlign="center">
+      <Box className="details-container" textAlign="center"  top="50%">
         <Spinner width="50px" height="50px"/>
         <Text>Loading repository details...</Text>
       </Box>
@@ -112,7 +112,7 @@ function RepositoryDetails() {
           <Text>License: {repository.license && repository.license.name}</Text>
         </Box>
         <Button className="button-del" onClick={handleDelete}>
-          Delete Repository
+          Delete Repo
         </Button>
         <UpdateRepoModal repo={repository} onUpdate={handleUpdate} />
         {/* <Button  onClick={() => navigate('/UpdateRepo')} >Update Repository</Button> */}

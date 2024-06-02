@@ -41,11 +41,14 @@ body {
 }
 .button-del {
   background-color: red;
-  margin-left: 20%;
+  left: 25%;
   margin-right: 20px;
 }
 .button-del:hover {
   background-color: rgb(187, 0, 0);
+}
+.button-up{
+  left: 25%;
 }
 .button-up,
 .createRepo,
@@ -94,12 +97,16 @@ body {
 }
 @media screen and (max-width: 768px) {
   .button-del {
-    margin-left: 0%;
+    left: 10%;
+  }
+  .button-up {
+    left: 10%;
   }
   .button-up1 {
     align-items: right;
     margin-left: 59%;
   }
+  
   
 }
 

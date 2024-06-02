@@ -10,13 +10,15 @@
   margin-bottom: 5px;
 }
 .private .chakra-checkbox__control {
-  width: 18px;
-  height: 18px;
+  width: 10px;
+  height: 10px;
+  padding: 5px;
   border: 2px solid;
   color: blue;
+  font-size: 15px;
 }
 .private {
-  font-size: 20px;
+  font-size: 15px;
   margin-left: 7%;
   margin-bottom: -100px;
 }
@@ -77,8 +79,24 @@
     color: rgb(0, 0, 0);
   }
   .text6 {
-    margin-left: 10%;
-    font-size: 30px;
+    margin-left: 5%;
+    font-size: 25px;
     margin-bottom: 20px;
+  }
+  .texth{
+    font-size: 20px;
+  }
+  .private .chakra-checkbox__control {
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+    /* padding: 10px; */
+    border: 2px solid;
+    color: blue;
+  }
+  .private {
+    font-size: 15px;
+    margin-left: 7%;
+    margin-bottom: -100px;
   }
 }
