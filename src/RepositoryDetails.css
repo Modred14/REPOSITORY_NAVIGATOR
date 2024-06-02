@@ -41,7 +41,7 @@ body {
 }
 .button-del {
   background-color: red;
-  left: 25%;
+  left: 31%;
   margin-right: 20px;
 }
 .button-del:hover {
@@ -96,12 +96,7 @@ body {
   margin-left: 70%;
 }
 @media screen and (max-width: 768px) {
-  .button-del {
-    left: 10%;
-  }
-  .button-up {
-    left: 10%;
-  }
+
   .button-up1 {
     align-items: right;
     margin-left: 59%;
@@ -109,15 +104,55 @@ body {
   
   
 }
+@media screen and (max-width: 625px) and (min-width: 500px) {
+  .button-del {
+    left: 27%;
+    margin-left: 10px;
+  }
+  .button-up {
+    left: 24%;
+    margin-left: -10px;
+  }
+}
 
 @media screen and (max-width: 500px) and (min-width: 400px) {
   .span-name{
     max-width: 250px;
     word-break: break-all;  }
+  
+  .button-del {
+    left: 22%;
+    margin-left: 10px;
   }
-@media screen and (max-width: 400px) {
+  .button-up {
+    left: 22%;
+    margin-left: -10px;
+  }}
+@media screen and (max-width: 400px) and (min-width: 340px) {
   .span-name{
     max-width: 200px;
     word-break: break-all;  }
+    .button-del {
+      left: 10%;
+      margin-left: 10px;
+    }
+    .button-up {
+      left: 10%;
+      margin-left: -10px;
+    }  
+  }
+  @media screen and (max-width: 340px) {
+    .span-name{
+      max-width: 200px;
+      word-break: break-all;  }
+      .button-del {
+        left: 10%;
+        /* margin-left: 10px; */
+      }
+      .button-up {
+        left: 10%;
+        /* margin-left: -10px; */
+      }  
+    
   }
 

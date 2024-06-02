@@ -111,10 +111,11 @@ function RepositoryDetails() {
           <Text>Website: {repository.homepage}</Text>
           <Text>License: {repository.license && repository.license.name}</Text>
         </Box>
+        <UpdateRepoModal repo={repository} onUpdate={handleUpdate} />
         <Button className="button-del" onClick={handleDelete}>
           Delete Repo
         </Button>
-        <UpdateRepoModal repo={repository} onUpdate={handleUpdate} />
+        
         {/* <Button  onClick={() => navigate('/UpdateRepo')} >Update Repository</Button> */}
         <Link to={"/"} className="go-home-link">
           HOME
